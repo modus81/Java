@@ -13,9 +13,9 @@ public class Main {
 	String name;
 	String userID;
 	String email;
-	int phnNumber;
-	String city;
-	String state;	
+	private int phnNumber;
+	private String city;
+	private String state;	
     
 	public static void main(String[] args) {
 		
@@ -59,20 +59,18 @@ public class Main {
 	 public int checkBalance(int amountPaid){
 		 int tuition = 3500;
 		 int balance = tuition - amountPaid  ;	
-		 System.out.println(balance);
+		 System.out.println("The remaining balance: " + balance);
 		 return balance;
 	 }
 	 public void showCourse(){
-		 System.out.println("English"+"Science"+ "Math");
+		 System.out.println("Your courses are: " + "English "+" Science "+ " Math");
 		 
 	 }
 	 
 	 @Override // an annotation that overrides to use this and not another toString metho
      // toString turns an object into a string
       public String toString() {
-     return "[" + name + ". " + email + "." + userID + "]";	}
-
-
+     return "[ Name: " + name + ". " + email + "User ID is: " + userID + "]";	}
 		 
 	 
 

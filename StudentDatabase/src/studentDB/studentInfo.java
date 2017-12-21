@@ -10,7 +10,8 @@ public class studentInfo {
 	 stud1.enroll();
 	 stud1.checkBalance(3000);
 	 stud1.showCourse();
-	 stud1.toString();
+	 
+	 System.out.println(stud1.toString());
 	}
 
 }
