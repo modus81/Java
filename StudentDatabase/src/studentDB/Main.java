@@ -23,10 +23,9 @@ public class Main {
 	
 	 public String NewStudent (String Name, int ssn){
 		 //email is created with the name and concat with @SDET.edu	
-	   email = (name +"@Sdet.edu");
-	   name = Name;
+	   email = (Name +"@Sdet.edu");
 	   System.out.println(email); 
-	   return email = (name +"@Sdet.edu");   
+	   return email = (Name +"@Sdet.edu");   
 	   		 
 		 
 	 }
@@ -59,8 +58,13 @@ public class Main {
 	 }
 	 public int checkBalance(int amountPaid){
 		 int tuition = 3500;
-		 int balance = amountPaid - tuition;		 
+		 int balance = tuition - amountPaid  ;	
+		 System.out.println(balance);
 		 return balance;
+	 }
+	 public void showCourse(){
+		 System.out.println("English"+"Science"+ "Math");
+		 
 	 }
 	 
 	 @Override // an annotation that overrides to use this and not another toString metho
