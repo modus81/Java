@@ -12,6 +12,8 @@ public class studentInfo {
 	 stud1.showCourse();
 	 
 	 System.out.println(stud1.toString());
+	 
+	 //need to add getters and setters for things set to private
 	}
 
 }
